@@ -1,0 +1,28 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'images/safaricom.jpg' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body>
+<a href="{% url 'my_home' %}">Home</a>
+<a href="{% url 'my_about' %}">About US</a>
+<a href="{% url 'my_contact' %}">Contact</a>
+<a href="{% url 'my_services' %}">Services</a>
+
+
+
+<h2>Welcome to Django</h2>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</span></p>
+
+<img src="{% static 'images/image 1.jpg' %}" alt="" >
+<img src="{% static 'image/image 6.jpg' %}" alt="" >
+
+</body>
+</html>
